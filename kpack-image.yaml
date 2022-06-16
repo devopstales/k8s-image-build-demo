@@ -1,0 +1,19 @@
+---
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  generateName: silly-demo-
+  namespace: build
+spec:
+  tag: devopstales/kapck-demo
+  additionalTags:
+  - devopstales/kapck-demo:latest
+  - devopstales/kapck-demo:0.0.1
+  serviceAccountName: regcred
+  builder:
+    name: silly-demo
+    kind: Builder
+  source:
+    git:
+      url: https://github.com/devopstales/k8s-image-build-demo
+      revision: ebb790f3959c05e6c196e88016a243a0053f450a
