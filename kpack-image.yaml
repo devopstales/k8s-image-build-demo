@@ -16,4 +16,4 @@ spec:
   source:
     git:
       url: https://github.com/devopstales/k8s-image-build-demo
-      revision: ebb790f3959c05e6c196e88016a243a0053f450a
+      revision: ee883881f36da5b21415ef0f38dfcee1e7e34553

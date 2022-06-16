@@ -8,7 +8,8 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/devopstales/k8s-image-build-demo",
-            "--destination=devopstales/kaniko-git:1.0.0"]
+            "--destination=devopstales/kaniko-git:1.0.0",
+            "--force"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
